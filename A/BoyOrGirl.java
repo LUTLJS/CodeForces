@@ -3,6 +3,7 @@ public class BoyOrGirl {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
+        sc.close();
         int n = s.length();
         while(s.length() != 0) {
             char c = s.charAt(0);

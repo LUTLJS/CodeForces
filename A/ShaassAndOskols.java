@@ -11,6 +11,7 @@ public class ShaassAndOskols {
         int m = sc.nextInt();
         if(n == 1 && m != 0) {
             System.out.print("0");
+            sc.close();
             return ;
         }
         
@@ -29,7 +30,7 @@ public class ShaassAndOskols {
             }
             m--;
         }
-
+        sc.close();
         for(int j = 0; j < n; j++) {
             if(j != n - 1) {
                 System.out.print(a[j] + "\n");

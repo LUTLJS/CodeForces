@@ -3,6 +3,7 @@ public class Word {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String word = sc.nextLine();
+        sc.close();
         int nU = 0, nL = 0, len = word.length();
         for(int i = 0; i < len; i++) {
             if(word.charAt(i) <= 90) {

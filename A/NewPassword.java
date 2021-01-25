@@ -3,6 +3,7 @@ public class NewPassword {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(), k = sc.nextInt();
+        sc.close();
         String s = "";
         for(int i = 97; i < 97 + k; i++) {
             s += String.valueOf((char)i);

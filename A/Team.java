@@ -7,6 +7,7 @@ public class Team {
             if(sc.nextInt() + sc.nextInt() + sc.nextInt() > 1) m++;
             n--;
         }
+        sc.close();
         System.out.printf(m+"");
     }
 }

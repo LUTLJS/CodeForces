@@ -16,6 +16,7 @@ public class PoliceRecruits {
                 police += curr;
             }
         }
+        sc.close();
         System.out.print(uEvents + "");
     }
 }

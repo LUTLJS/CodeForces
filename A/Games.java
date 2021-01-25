@@ -7,7 +7,7 @@ public class Games {
         while(n > 0) {
             a[--n] = sc.nextInt();
         }
-
+        sc.close();
         int count = 0;
         for(int i = 0; i < a.length - 2; i += 2) {
             for(int j = i + 2; j < a.length - 1; j += 2) {

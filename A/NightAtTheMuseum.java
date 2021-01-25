@@ -3,6 +3,7 @@ public class NightAtTheMuseum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
+        sc.close();
         char p = 'a';
         int count = 0;
         for(int i = 0; i < s.length(); i++) {

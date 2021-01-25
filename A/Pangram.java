@@ -5,10 +5,12 @@ public class Pangram {
         int n = sc.nextInt();
         if(n < 26) {
             System.out.print("NO");
+            sc.close();
             return ;
         }
         sc.nextLine();
         String s = sc.nextLine();
+        sc.close();
         Set<Character> hSet = new HashSet<>();
         for(int i = 0; i < n; i++) {
             char c = s.charAt(i);

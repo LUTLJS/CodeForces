@@ -8,7 +8,7 @@ public class Horseshoe {
             a[i] = sc.nextInt();
             i++;
         }
-
+        sc.close();
         for(int j = 0; j < 3; j++) {
             for(int k = j + 1; k < 4; k++) {
                 if(a[j] != 0 && a[j] == a[k]) {

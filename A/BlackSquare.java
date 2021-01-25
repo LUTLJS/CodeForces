@@ -8,6 +8,7 @@ public class BlackSquare {
         }
         sc.nextLine();
         String s = sc.nextLine();
+        sc.close();
         int sum = 0;
         for(int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);

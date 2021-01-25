@@ -14,6 +14,7 @@ public class Juicer {
                 waste = 0;
             }
         }
+        sc.close();
         System.out.print(count + "");
     }
 }

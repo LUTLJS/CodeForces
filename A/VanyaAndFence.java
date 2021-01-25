@@ -11,6 +11,7 @@ public class VanyaAndFence {
             }
             n--;
         }
+        sc.close();
         System.out.printf(width+"");
     }
 }

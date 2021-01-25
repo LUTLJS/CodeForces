@@ -5,6 +5,7 @@ public class AntonAndDanik {
         int n = sc.nextInt(), countA = 0;
         sc.nextLine();
         String s = sc.nextLine();
+        sc.close();
         for(int i = 0; i < s.length(); i++) 
             if(s.charAt(i) == 'A') countA++;
         if(n % 2 == 0) {

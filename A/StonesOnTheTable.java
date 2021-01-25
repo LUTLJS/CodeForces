@@ -5,6 +5,7 @@ public class StonesOnTheTable {
         int n = sc.nextInt();
         sc.nextLine();
         String s = sc.nextLine();
+        sc.close();
         char ct = s.charAt(0);
         String temp = String.valueOf(ct);
         for(int i = 1; i < s.length(); i++) {

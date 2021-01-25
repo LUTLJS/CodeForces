@@ -7,6 +7,7 @@ public class BeautifulMatrix {
             if(sc.nextInt() == 1) break;
             i++;
         }
+        sc.close();
         if(i <= 4) {
             System.out.printf(2 + Math.abs(i + 10 -12) + "");
         } else if(i <= 9) {

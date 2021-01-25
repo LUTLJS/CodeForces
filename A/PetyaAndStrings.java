@@ -3,6 +3,7 @@ public class PetyaAndStrings {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine(), b = sc.nextLine();
+        sc.close();
         for(int i = 0; i < a.length(); i++) {
             char ca = a.charAt(i);
             char cb = b.charAt(i);   

@@ -15,6 +15,7 @@ public class Magnets {
                 s = ss;
             }
         }
+        sc.close();
         System.out.printf(count + "");
     }
 }

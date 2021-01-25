@@ -3,6 +3,7 @@ public class BearAndBigBrother {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt(), b = sc.nextInt(), n = 0;
+        sc.close();
         while(true) {
             n++;
             a *= 3;

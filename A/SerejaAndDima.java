@@ -8,6 +8,7 @@ public class SerejaAndDima {
             a[i] = sc.nextInt();
             i++;
         }
+        sc.close();
         int head = 0, tail = n - 1, s = 0, d = 0;
         boolean isSeTurn = true;
         while(head != tail) {
