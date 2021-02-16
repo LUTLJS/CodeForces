@@ -2,6 +2,7 @@
 ID: lutljs1
 TASK: friday
 LANG: C++
+
 */
 #include <bits/stdc++.h>
 using namespace std;
