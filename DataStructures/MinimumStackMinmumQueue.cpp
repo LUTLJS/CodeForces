@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*
+We could use this: pair<int,int> p[n];
+or, this: vector<pair<int,int>> v;
+Let the each element carry with it the minimum element or the maximum element.
+It's like prefix sum?
+Similar concept: the so-far sum, the so-far minimum element, the so-far maximum element
+*/
+/*
 The whole idea is to store the minimum value of the elements we've encountered so far with the current element.
 The following code finds the minimum element of some fixedLength segments, which are a0~afixedLength-1
 */
