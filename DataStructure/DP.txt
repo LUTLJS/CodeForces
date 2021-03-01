@@ -2,3 +2,16 @@ Dynamic programming is about breaking down problems into pieces and storing the 
 of same computation. This technique is called memoization. It means we remmember the previous results so that in the future we encounter them again, we can
 just look it up and directly reuse it instead of computing it again.
 Update the optimal solution as we move on.
+
+Those who cannot remember the past are condemned to repeat the it.
+Break down an optimization problem into sub-problems and store the solution to each sub-problem.
+
+So it's basically about building the solution on regular recursive methodology.
+Except that we don't repeat things that we've done before.
+Once we have the solution to the sub-problem, we store it right away for future use.
+Usually, we need to find out the maximum or the minimum.
+
+We recall the way that solving problem by using recursive mehtods.
+Find out the base cases, and store it.
+Recursively moving forward, once the next sub-problem is here, we find out whether the solution to it exists.
+If it does exists, we just use instead of run through the process again.
