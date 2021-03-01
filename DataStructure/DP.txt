@@ -1,0 +1,4 @@
+Dynamic programming is about breaking down problems into pieces and storing the sub-solutions for future use in order to reduce the repeated steps 
+of same computation. This technique is called memoization. It means we remmember the previous results so that in the future we encounter them again, we can
+just look it up and directly reuse it instead of computing it again.
+Update the optimal solution as we move on.
