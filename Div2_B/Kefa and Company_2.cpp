@@ -16,11 +16,16 @@ int main(){
     sort(a.begin(),a.end());
     b[0]=a[0].first;
     for(int i=1;i<n;i++){
+        // prefix sum here really helps a lot, we can get the sum of friendship in O(1)
         a[i].second+=a[i-1].second;
         b[i]=a[i].first;
     }
     vector<int>::iterator it,lob;
+    // we iterate over all possibilities
     for(it=b.begin();it!=b.end();it++){
+        // taking advantage of the given input d really speed up the finding process
+        // d means we don't have to iterate over the whole money array a
+        // it means we can quckily locate the first element that's equal to or greater than the bound
         lob=lower_bound(it,b.end(),*it+d);
         if(it==b.begin()){
             maxi=max(maxi,a[lob-b.begin()-1].second);
