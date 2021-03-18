@@ -1,1 +1,4 @@
 #maximum flow https://www.cs.purdue.edu/homes/ayg/CS251/slides/chap10c.pdf
+
+tricks:
+  couting duplicates:using map, key would be the element, value would be the number of occurences, it goes like this: map[element]++
