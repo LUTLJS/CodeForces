@@ -1,5 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+I still don't know how this works.
+So, this confusion led to discouragement.
+I feel I'm going to quit.
+Oh,hell no! I'm not going to quit.
+This is totally normal for me.
+Because I'm going to improve.
+*/
 vector<int> sons[100001],v,par(100001,-1),a(100001);
 void dfs(int k){
     for(auto u:sons[k]){
