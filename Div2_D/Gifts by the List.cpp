@@ -9,6 +9,10 @@ This is totally normal for me.
 Because I'm going to improve.
 */
 vector<int> sons[100001],v,par(100001,-1),a(100001);
+/*
+Why do we need dfs here? Wanted to access all descendants of people k.
+Why do we need to process all descendants of k?
+*/
 void dfs(int k){
     for(auto u:sons[k]){
         dfs(u);
@@ -16,6 +20,10 @@ void dfs(int k){
             cout<<-1,exit(0);
         }
     }
+    /*
+    The 
+    
+    */
     if(a[k]==k)v.push_back(k),a[k]=-1;
 }
 int main(){
