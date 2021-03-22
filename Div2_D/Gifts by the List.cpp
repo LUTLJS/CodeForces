@@ -5,7 +5,7 @@ void dfs(int k){
     for(auto u:sons[k]){
         dfs(u);
         if(a[u]!=-1&&a[u]!=a[k]){
-            cout<<-1;exit(0);
+            cout<<-1,exit(0);
         }
     }
     if(a[k]==k)v.push_back(k),a[k]=-1;
