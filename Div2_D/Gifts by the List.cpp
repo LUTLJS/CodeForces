@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*
+every pair of family relation is an edge of a graph in terms of mathmatical model
+further more, father-son suggests that this is a directed edge of a graph.
+So, one of the intputs is: a directed acyclic graph with vertices of which every one has at most one ingoing edge.
+The other input is: a sequence of vertices,which are the men to whom the men wants to give gift.
+To solve this problem,
+*/
+/*
 I still don't know how this works.
 So, this confusion led to discouragement.
 I feel I'm going to quit.
