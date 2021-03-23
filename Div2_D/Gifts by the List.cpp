@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*
+toposort it, then reverse it, since toposort makes ancestor come before their discendants.
+However, we don't need that. What we need is actually the opposite.
+So, how do we remove the redundents. If it doesn't appear in the array, we simply don't put it into resulting sequence.
+*/
+/*
 Iterate through vertices from resulting sequence, all vertices from current vertex subtree are going to give gift to current vertex because it's the first 
 ancestor from the resulting sequence.
 */
