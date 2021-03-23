@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*
+Iterate through vertices from resulting sequence, all vertices from current vertex subtree are going to give gift to current vertex because it's the first 
+ancestor from the resulting sequence.
+*/
+/*
 every pair of family relation is an edge of a graph in terms of mathmatical model
 further more, father-son suggests that this is a directed edge of a graph.
 So, one of the intputs is: a directed acyclic graph with vertices of which every one has at most one ingoing edge.
