@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*
+It took me two days to understand the editorial. I am awesome!.
+Also, my endurance of confusion has expanded! Great job!
+*/
+/*
 toposort it, then reverse it, since toposort makes ancestor come before their discendants.
 However, we don't need that. What we need is actually the opposite.
 So, how do we remove the redundents. If it doesn't appear in the array, we simply don't put it into resulting sequence.
