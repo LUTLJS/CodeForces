@@ -18,8 +18,10 @@ const long long inf=1e16;
 typedef pair<long long,long long> ii;
 typedef pair<long long,ii> iii;
 long long n;
+// a data structure that we created to be useful
 struct animal{int a,b,c,id,pos,colour,redHere;};
 vector<animal> belt;
+// store original data
 vector<animal> arr;
 vector<iii> s;
 vector<ii> reds;
@@ -29,17 +31,47 @@ void insert(long long b, long long beltPos,long long pos){
 }
 long long totalMoves=0;
 void brute(){
+	/*
+	double-ended queue to simulate the fight process
+	*/
 	deque<animal> q;
+	/*
+	the king after first fight
+	*/
 	animal w=arr[0];
+	/*
+	double ended queue stores all other animals
+	*/
 	for(int i=1;i<n;i++)q.push_back(arr[i]);
+	/*
+	count is 1 initially because the first has happened.
+	count is for mark the fights a king has won
+	*/
 	long long count=1;
+	/*
+	x is the number of fights so far
+	*/
 	for(int x=1;;x++){
+		/*
+		if x could be larger than 2*n,then there is no two consecutive animals are red.
+		why is 2*n?
+		n is the number of animals
+		x is the number of fights
+		*/
 		if(x>2*n)return ;
+		/*
+		the king has finally become the king
+		*/
 		if(count==3){
 			cout<<w.id<<" "<<x<<"\n";exit(0);
 		}
+		/*
+		the king has just won one fight
+		*/
 		if(count==1){
+			// the king has just won one fight
 			if(w.b>q.front().a){
+				// the current king wins the second fight
 				animal y=q.front();
 				q.push_back(y);
 				q.pop_front();
@@ -51,7 +83,9 @@ void brute(){
 				count=1;
 			}
 		}else{
+			// king has won two consecutive fights
 			if(w.c>q.front().a){
+				// king won its third fight
 				animal y=q.front();
 				q.push_back(y);
 				q.pop_front();
@@ -67,14 +101,39 @@ void brute(){
 }
 int main(){
 	ios::sync_with_stdio(false);cin.tie(nullptr);
+	/*
+	the number of animals
+	*/
 	cin>>n;
+	/*
+	strength A, B and C of an animal
+	*/
 	for(int i=0;i<n;i++){
 		int a,b,c;cin>>a>>b>>c;
+		/*
+		make sure that input is correct / input meets the following condition
+		*/
 		assert(a>b and b<c);
+		/*
+		store original input
+		*/
 		arr.push_back({a,b,c,i,-1,1,-1});
 	}
+	/*
+	handle the first fight
+	*/
 	if(arr[0].a>arr[1].a) swap(arr[0],arr[1]);
-	arr.push_back(arr[0]);arr.erase(arr.begin());
+	/*
+	to make a circle, the loser goes to the end of the queue
+	*/
+	arr.push_back(arr[0]);
+	/*
+	king is not here
+	*/
+	arr.erase(arr.begin());
+	/*
+	
+	*/
 	brute();
 	for(int i=1;i<n;i++){
 		if(arr[i-1].b>arr[i].a)arr[i].colour=RED;
