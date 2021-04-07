@@ -2,3 +2,8 @@
 #Competitive Programming Resources https://www.cs.purdue.edu/homes/ninghui/courses/390_Fall19/resources.html
 tricks:
   couting duplicates:using map, key would be the element, value would be the number of occurences, it goes like this: map[element]++
+快速幂，大数，并查集，二分，简单01背包，
+深度搜索，广度搜索，最短路
+dp, kmp, RMQ, 矩阵快速幂，树状数组，线段树，
+容斥，欧拉函数，字典树，网络流，
+AC自动机，每个1至2周，
