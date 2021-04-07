@@ -1,0 +1,21 @@
+这一版本根据cs97SI课程来。仔细查看对应文件里的内容，不熟悉的马上谷歌，确保每一个主题花上一周的时间，尽量把课程给出的对应的习题做完，但是不限制于此。
+
+2021.04.07~2021.04.13:Mathematics
+
+2021.04.14~2021.04.20:Data Structures
+
+2021.04.21~2021.04.27:dp
+
+2021.04.28~2021.05.04:combinatorial games
+
+2021.05.05~2021.05.11:basic graph algorithms
+
+2021.05.12~2021.05.18:shortest path algorithms
+
+2021.05.19~2021.05.25:network flow problems
+
+20210526~20210601:computational geometry
+
+20210602~20210608:string algorithms
+
+以上，时间已经安排到6月8号。
